@@ -278,16 +278,17 @@ footer{
         flex-wrap: wrap;   
     }*/
     .content{
-       flex-direction: column; 
+       flex-direction: column;
+       margin-bottom: 20%;
     }
     .card{
         position: absolute;
-        top: 85%;
+        top: 88%;
         align-items: center;
     }
     .myself{
         position: absolute;
-        top: 50%;
+        top: 37%;
         left: 50%;
         align-content: center;
         align-items: center;
@@ -296,7 +297,7 @@ footer{
         left: 50%;
         transform: translate(-50%, -50%);
         align-items: center;
-       top: 130%;
+       top: 139%;
      
     }
     footer{
@@ -306,7 +307,7 @@ footer{
         
     } 
 }
-@media screen and (max-width: 700px)
+@media screen and (max-width: 1024px)
 {
     body{
         background-color: #273746;
@@ -328,9 +329,9 @@ footer{
     .contact{
         display: none;
     }
-   .nav-active{
-        transform: translateX(0%);
-    }
+   /*.nav-active{
+        transform: translateX(50%);
+    }*/
 }
 /*@keyframes navLinkFade{
     from{
