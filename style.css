@@ -124,6 +124,10 @@ section{
 
 @media screen and (max-width: 1024px)
 {
+    li{
+        display: flex;
+        font-size: 15px;
+    }
     .bg{
         display: flex;
         position: absolute;
