@@ -4,79 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="javascript" href="nav.js">
-    <title>Home Page</title>
 </head>
 <body>
+    <img class="bg" src="bg.jpg" alt="">
     <header>
-        <img class="logo" src="images/logo.png" style="width:30px";>
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="js.html" target="
-                    ">JS</a></li>
-                    <li><a href="https://www.instagram.com/im_the.one/" target="_blank">Profile</a></li>
-                    <li class="abt"><a href="#">About</a>
-                        </li>
-                </ul>
-            </nav>
-               <a id="button" class="contact" style="color:white">Contact</a>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line1"></div>
-                    <div class="line1"></div>
+            <img class="logo" src="logo.png" alt="logo" width="50" height="50">
+    <nav>
+       <ul>
+        <li class="nav_link"> <a class="about" href="">About</a></li> 
+        <li class="nav_link"> <a  href="">Resume</a></li> 
+        <li class="nav_link"> <a  href="">Extra</a></li> 
+    </ul>
+    
+    </nav>
+    <a class="contact" href=""><button>Contact</button></a>
+</header>
+    <section class="card">
+        <div class="abtme">
+            <img class="me" src="sagar.jpg" alt="" width="300" height="300">
+                <div class="right">
+                    <span class="hello">Hello</span>
+                    <h3>I'm <span class="name" style="font-size: 40px">Sagar More</span></h3>
+                    <p class="pro">Front-End Developer</p>
                 </div>
-    </header>
-    <div class="page">
-    <section>
-        <div class="middle">
-            <img class="goku" src="images/goku.png" alt="">
-            <img class="kameha" src="images/kameha.png" alt="">
-            
         </div>
     </section>
-    <section>
-            <div class="video">
-                <div class="dia">
-                <q class="quote" >I am the hope of the universe....I am the answer to all living things that cry out for peace...I am the protector of the innocent...I am the light in the darkness...I am truth. Ally to good... Nightmare to you!!!</q>
-                    </div>
-                <iframe  src="https://www.youtube.com/embed/KfWrwBCYfsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-    </section>
-   
-        <div class="modal">
-
-    <div class="modal-content">
-        <h3>contact us</h3>
-        <i id="close" class="far fa-times-circle"></i>
-        <p>Name</p>
-        <input class="txt" type="text" name="name" placeholder="Enter your name" required>
-        <p>Email</p>
-        <input class="txt" type="email" name="email" id="email" required>
-        <p>Phone no.</p>
-        <input class="txt" type="number" name="phone" id="phone" required>
-        <p>Type here</p>
-        <textarea class="txtarea" name="message" id="message" cols="30" rows="10"></textarea>
-        <br><button class="sub" type="submit" value="submit">Submit</button>
-    </div>
-        </div>
-
-    </div>
-
-    <script>
-        document.getElementById('button').addEventListener('click',
-        function(){
-            document.querySelector('.modal').style.display= "flex";
-        });
-        document.getElementById('close').addEventListener('click',
-        function(){
-            document.querySelector('.modal').style.display="none";
-        })
-
-    </script>
-    <script src="https://kit.fontawesome.com/fe2d4021fa.js" crossorigin="anonymous"></script>
-    <script src="nav.js"></script>
-       
 </body>
 </html>
