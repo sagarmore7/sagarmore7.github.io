@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/fe2d4021fa.js" crossorigin="anonymous"></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,13 +15,13 @@
             <img class="logo" src="logo.png" alt="logo" width="50" height="50">
     <nav>
        <ul>
-        <li class="nav_link"> <a class="about" href="">About</a></li> 
+        <li class="nav_link"> <a class="about" href="index.html">About</a></li> 
         <li class="nav_link"> <a  href="">Resume</a></li> 
         <li class="nav_link"> <a  href="">Extra</a></li> 
     </ul>
     
     </nav>
-    <a class="contact" href=""><button>Contact</button></a>
+    <a id="button" class="contact">Contact</a>
 </header>
     <section class="card">
         <div class="abtme">
@@ -46,5 +46,26 @@
                 </div>
         </div>
     </section>
+        <div class="modal">
+
+            <div class="modal-content">
+                <h3>contact us</h3>
+                <i id="close" class="far fa-times-circle"></i>
+                <p>Name</p>
+                <input class="txt" type="text" name="name" placeholder="Enter your name" required>
+                <p>Email</p>
+                <input class="txt" type="email" placeholder="Enter your email" name="email" id="email" required>
+                <p>Phone Number</p>
+                <input class="txt" type="number" name="phone" id="phone" min="1" maxvalue="10" required>
+                <p>Type here</p>
+                <textarea class="txtarea" name="message" id="message" cols="30" rows="10"></textarea>
+                <br><button class="sub" type="submit" value="submit">Submit</button>
+            </div>
+                </div>
+
+    <script src="https://kit.fontawesome.com/fe2d4021fa.js" crossorigin="anonymous"></script>
+        <script src="app.js">
+            </script>
+
 </body>
 </html>
