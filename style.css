@@ -69,6 +69,9 @@ section{
     justify-items: center;
     background-color: white;
     box-shadow: 4px 5px 12px black;
+    animation: drop 1s ease-in;
+    
+    
 }
 /*.abtme{
     display: flex;
@@ -158,7 +161,7 @@ section{
 .icons a{
     color: rgb(0, 0, 0);
 }
-.about:active{
+.about{
     border-bottom: 2px solid rgb(0, 255, 128);
 }
 .modal{
@@ -274,6 +277,7 @@ section{
     }
     section{
         box-shadow: 8px 10px 19px black;
+       
     }
     .card{
         flex-direction: column;
@@ -283,6 +287,7 @@ section{
         left: 50%;
         top: 55%;
         transform: translate(-50%, -50%);
+        
     }
     .right h3{
         flex-direction: column;
@@ -348,5 +353,15 @@ section{
         left: 50%;
         top: 55%;
         transform: translate(-50%, -50%);
+    }
+}
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    100%{
+        opacity: 1;
+         transform: translate(-50%, -50%);
     }
 }
