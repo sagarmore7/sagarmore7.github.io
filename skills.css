@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.bg {
+    width: 100%;
+    position: absolute;
+    top: -70%;
+    filter: brightness(50%);
+    z-index: -1;
+    overflow: hidden;
+}
+.skills-nav{
+    border-bottom: 2px solid rgb(0, 255, 128);
+}
+li,a,#button{
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(0, 255, 128);
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+.logo{
+    cursor: pointer;
+}
+header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+   
+    /*position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+.nav_link{
+    list-style: none;
+    float: left;
+    padding: 0 30px;
+}
+#button{
+    background-color: rgb(0, 255, 128);
+    border-style: none;
+    color:rgb(0, 116, 58);
+    border-radius: 20px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+    height: 23px;
+}
+#button:hover{
+    background-color:rgb(0, 170, 85);
+    color: white;
+}
+ li > a:hover{
+    color: rgb(0, 238, 255); 
+    transition: all 0.1s ease-in;
+}
+a{
+    border-bottom: 40px;
+}
+section{
+    position: absolute;
+    top: 50%;
+    width: 60%;
+    height: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-items: center;
+    background-color: white;
+    box-shadow: 4px 5px 12px black;
+    animation: drop 1s ease-in;
+}
+.skills{
+    width: 400px;
+    margin : auto;
+    list-style: none;
+}
+.skills li{
+    margin: 25px 0;
+}
+.skills h3{
+    color: black;
+}
+.middle h1{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 9px;
+    text-transform: uppercase;
+    background-color: rgb(0, 255, 128);
+}
+.bar{
+    height: 7px;
+    display: block;
+    background:rgb(199, 255, 220) ;
+    border: 1px solid rgb(0, 255, 128);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow:0 0 10px black;
+}
+.bar span{
+    height: 5px;
+    border-radius: 10px;
+    float: left;
+    background:black;
+}
+
+/*------  icon colors*/
+
+.css3{
+    color: rgb(0, 183, 255);
+}
+.html5{
+    color: orangered;
+}
+.jscript{
+    color: rgb(0, 0, 0);
+}
+.ps{
+    color:darkblue;
+}
+.bootstrap{
+    color: purple;
+}
+
+/*----- Bars */
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.css{
+    width: 75%;
+    animation: css 3s;
+}
+.js{
+    width: 30%;
+    animation: js 3s;
+}
+.photoshop{
+    width: 92%;
+    animation: photoshop 3s;
+}
+.bootstrap{
+    width: 60%;
+    animation: bootstrap 3s;
+}
+@media screen and (max-width:1050px)
+{
+    .bg {
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+}
+@media screen and (max-width:700px)
+{
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav li{
+        display: flex;
+        font-size: 15px;
+    }
+    .nav_link{
+        
+        padding:0 0;
+    }
+    .nav_link a{
+        font-size:17px;
+        padding: 0 10px;
+
+    }
+    section{
+        top: 42%;
+        width: 80%;
+        height: 500px;
+    }
+    .skills{
+        width: 200px;
+    }
+    .skills h3{
+        width: 180px;
+        margin: 0;
+    }
+    .skills li{
+        width: 210px;
+    }
+}
+@media screen and (max-width:330px){
+    section{
+        top: 90%;
+        
+    }
+    nav li{
+        display: flex;
+        font-size: 12px;
+    }
+    .nav_link{
+        
+        padding:0 0;
+    }
+    .nav_link a{
+        font-size:15px;
+        padding: 0 5px;
+
+    }
+}
+@media screen and (max-width:376px){
+section{
+    top: 50%;
+}
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+@keyframes photoshop {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 92%;
+    }
+}
+@keyframes bootstrap {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    100%{
+        opacity: 1;
+         transform: translate(-50%, -50%);
+    }
+}
