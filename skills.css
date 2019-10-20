@@ -23,39 +23,21 @@ li,a,#button{
     text-decoration: none;
 }
 .logo{
+    margin: 0 10px;
     cursor: pointer;
 }
 header{
     position: absolute;
     top: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
-   
-    /*position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
 }
 .nav_link{
     list-style: none;
     float: left;
     padding: 0 30px;
-}
-#button{
-    background-color: rgb(0, 255, 128);
-    border-style: none;
-    color:rgb(0, 116, 58);
-    border-radius: 20px;
-    text-align: center;
-    width: 80px;
-    cursor: pointer;
-    height: 23px;
-}
-#button:hover{
-    background-color:rgb(0, 170, 85);
-    color: white;
 }
  li > a:hover{
     color: rgb(0, 238, 255); 
@@ -63,6 +45,9 @@ header{
 }
 a{
     border-bottom: 40px;
+}
+a:hover{
+    border-bottom: 2px solid rgb(0, 255, 128);
 }
 section{
     position: absolute;
@@ -164,7 +149,7 @@ section{
     body{
         overflow-x: hidden;
     }
-    nav{
+    /* nav{
         display: flex;
         justify-content: space-evenly;
     }
@@ -174,13 +159,13 @@ section{
     }
     .nav_link{
         
-        padding:0 0;
+        padding:0 10px;
     }
     .nav_link a{
         font-size:17px;
         padding: 0 10px;
 
-    }
+    } */
     section{
         top: 42%;
         width: 80%;
@@ -202,7 +187,7 @@ section{
         top: 90%;
         
     }
-    nav li{
+    /* nav li{
         display: flex;
         font-size: 12px;
     }
@@ -214,11 +199,15 @@ section{
         font-size:15px;
         padding: 0 5px;
 
-    }
+    } */
 }
 @media screen and (max-width:376px){
 section{
     top: 50%;
+    
+}
+.nav_link{
+    padding: 0 15px;
 }
 }
 @keyframes html {
