@@ -125,7 +125,7 @@ section{
     animation: css 3s;
 }
 .js{
-    width: 30%;
+    width: 60%;
     animation: js 3s;
 }
 .photoshop{
@@ -231,7 +231,7 @@ section{
         width: 0%;
     }
     100%{
-        width: 30%;
+        width: 60%;
     }
 }
 @keyframes photoshop {
