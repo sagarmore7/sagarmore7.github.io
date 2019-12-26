@@ -55,12 +55,45 @@ li > a:hover{
     justify-content: space-evenly;
     display: inline-flex;
     font-family: 'Ubuntu', sans-serif;
-}
+} 
 .card{
     box-shadow: 4px 5px 12px black;
 }
-@media screen and (max-width:361px){
+@media screen and (max-width:400px){
     .nav_link{
         padding: 0 15px;
     }
 }
+
+@media screen and (max-width:900px){
+   .middle{
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+
+   }
+   .card{
+       margin-right: 15px;
+       margin-bottom: 15px;
+   }
+}
+
+@media screen and (max-width:500px){
+    .middle{
+     position: absolute;
+     top: 115%;
+     width: 70%;
+     left: 50%;
+     justify-content: space-evenly;
+     display: flex;
+     flex-direction: column;
+    }
+    .card{
+        margin-bottom: 15px;
+    }
+ }

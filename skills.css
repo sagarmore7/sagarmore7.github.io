@@ -51,9 +51,9 @@ a:hover{
 }
 section{
     position: absolute;
-    top: 50%;
+    top: 53%;
     width: 60%;
-    height: 400px;
+    height: 500px;
     left: 50%;
     transform: translate(-50%, -50%);
     justify-items: center;
@@ -96,6 +96,10 @@ section{
     background:black;
 }
 
+.extra-icon{
+    width: 20px;
+}
+
 /*------  icon colors*/
 
 .css3{
@@ -128,6 +132,10 @@ section{
     width: 60%;
     animation: js 3s;
 }
+.jquery{
+    width: 40%;
+    animation: jquery 3s;
+}
 .photoshop{
     width: 92%;
     animation: photoshop 3s;
@@ -135,6 +143,10 @@ section{
 .bootstrap{
     width: 60%;
     animation: bootstrap 3s;
+}
+.adobexd{
+    width: 50%;
+    animation: xd 3s;
 }
 @media screen and (max-width:1050px)
 {
@@ -234,6 +246,14 @@ section{
         width: 60%;
     }
 }
+@keyframes jquery {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
 @keyframes photoshop {
     0%{
         width: 0%;
@@ -248,6 +268,14 @@ section{
     }
     100%{
         width: 60%;
+    }
+}
+@keyframes xd {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
     }
 }
 @keyframes drop{
