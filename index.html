@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img class="bg" src="bg.jpg" alt="">
+    
+    <!-- <img class="bg" src="bg.jpg" alt=""> -->
     <header>
             <img class="logo" src="logo.png" alt="logo" width="50" height="50">
     <nav>
@@ -62,10 +63,15 @@
                 <br><button class="sub" type="submit" value="submit">Submit</button>
             </div>
                 </div>
-
+                <div id="particles-js"></div>
     <script src="https://kit.fontawesome.com/fe2d4021fa.js" crossorigin="anonymous"></script>
         <script src="app.js">
             </script>
-
+            
+    <script src="particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      });</script>
 </body>
 </html>
