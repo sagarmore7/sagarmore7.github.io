@@ -26,6 +26,12 @@ li,a,#button{
     margin: 0 10px;
     cursor: pointer;
 }
+.undraw{
+    z-index: -1;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+}
 header{
     position: absolute;
     top: 0;
@@ -53,7 +59,7 @@ section{
     position: absolute;
     top: 53%;
     width: 60%;
-    height: 500px;
+    height: 550px;
     left: 50%;
     transform: translate(-50%, -50%);
     justify-items: center;
@@ -117,6 +123,9 @@ section{
 .bootstrap{
     color: purple;
 }
+.React{
+    color: rgb(0, 183, 255);
+}
 
 /*----- Bars */
 
@@ -135,6 +144,10 @@ section{
 .jquery{
     width: 40%;
     animation: jquery 3s;
+}
+.react{
+    width: 20%;
+    animation: react 3s;
 }
 .photoshop{
     width: 92%;
@@ -181,7 +194,7 @@ section{
     section{
         top: 42%;
         width: 80%;
-        height: 500px;
+        height: 550px;
     }
     .skills{
         width: 200px;
@@ -252,6 +265,14 @@ section{
     }
     100%{
         width: 40%;
+    }
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
     }
 }
 @keyframes photoshop {
