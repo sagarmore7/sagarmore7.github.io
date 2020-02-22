@@ -57,9 +57,9 @@ a:hover{
 }
 section{
     position: absolute;
-    top: 53%;
+    top: 55%;
     width: 60%;
-    height: 550px;
+    height: 600px;
     left: 50%;
     transform: translate(-50%, -50%);
     justify-items: center;
@@ -149,6 +149,10 @@ section{
     width: 20%;
     animation: react 3s;
 }
+.pgsql{
+    width: 50%;
+    animation: pgsql 3s;
+}
 .photoshop{
     width: 92%;
     animation: photoshop 3s;
@@ -192,9 +196,9 @@ section{
 
     } */
     section{
-        top: 42%;
+        top: 45%;
         width: 80%;
-        height: 550px;
+        height: 600px;
     }
     .skills{
         width: 200px;
@@ -228,7 +232,7 @@ section{
 }
 @media screen and (max-width:376px){
 section{
-    top: 50%;
+    top: 55%;
     
 }
 .nav_link{
@@ -273,6 +277,14 @@ section{
     }
     100%{
         width: 20%;
+    }
+}
+@keyframes pgsql {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
     }
 }
 @keyframes photoshop {
